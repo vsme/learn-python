@@ -20,4 +20,6 @@ a ^ b     # 对称差 {1,2,4,5}
 {1,2} <= {1,2,3}     # 子集 True
 {1,2,3}.issuperset({1,2})  # 超集 True
 
-print(type({}))
+print(type({})) # <class 'dict'>
+print(type({})) # <class 'set'>
+print(type(set())) # <class 'set'>
