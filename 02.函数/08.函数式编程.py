@@ -76,3 +76,16 @@ print(counter1())  # 输出: 3
 print("\n第二个计数器：")
 print(counter2())  # 输出: 1
 print(counter2())  # 输出: 2
+
+# 闭包 返回函数
+def count(n):
+    fs = []
+    for i in range(1, 4):
+        fs.append(lambda i = i: i * i)
+    return fs
+
+fs = count(3)
+print(fs)
+print(fs[0]())
+print(fs[1]())
+print(fs[2]())
