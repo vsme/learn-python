@@ -3,7 +3,7 @@ students = ["小明", "小红", "小刚"]
 # 用for循环依次打印每个学生的名字
 for student in students:
     print(student)  # 每次循环，student变量会依次等于列表中的每个名字
-    
+
 # 计算1到10的累加和
 total = 0  # 用于累加的变量
 # 使用range()函数生成1到10的整数序列
@@ -28,7 +28,7 @@ for i in range(1, 101):
 # 打印1到10中的所有奇数
 for i in range(1, 11):
     if i % 2 == 0:  # 如果是偶数
-        continue    # 跳过本次循环，后面的print不会执行
-    print(i)        # 只会打印奇数
+        continue  # 跳过本次循环，后面的print不会执行
+    print(i)  # 只会打印奇数
 
 print(list(range(5, 1, -1)))

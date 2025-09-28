@@ -4,7 +4,7 @@ import re
 text = "2023-08-20 is a date, and 2024-01-01 is also a date."
 m = re.search(r"\d{4}-\d{2}-\d{2}", text)  # 找第一个匹配
 if m:
-    m.group(0)   # 整个匹配
+    m.group(0)  # 整个匹配
     m.start(), m.end()
 
 # 2) 全部匹配
@@ -15,22 +15,22 @@ for m in re.finditer(r"\b\w+\b", text):
     print(m.group(), m.span())
 
 # 4) 替换
-re.sub(r"\s+", " ", text)                   # 多空白折叠为单空格
+re.sub(r"\s+", " ", text)  # 多空白折叠为单空格
 s = "123-456-7890"
-print('s', s)
-re.sub(r"(\d{3})-(\d{4})", r"\1 \2", s)     # 用分组反向引用
+print("s", s)
+re.sub(r"(\d{3})-(\d{4})", r"\1 \2", s)  # 用分组反向引用
 
 # 5) 分割
-re.split(r"[,\s]+", "a,  b   c")            # -> ['a','b','c']
+re.split(r"[,\s]+", "a,  b   c")  # -> ['a','b','c']
 
 # 6) 预编译（频繁使用时更快）
 pat = re.compile(r"\b([A-Za-z]+)=(\d+)\b")
 pat.search(text)
 
-print(re.findall(r"[^abc]+", "abz1cxy")) # ['z1', 'xy']
+print(re.findall(r"[^abc]+", "abz1cxy"))  # ['z1', 'xy']
 
 s = "scatter catalog cat"
-print(re.findall(r"\Bcat\B", s)) # 左右都在“单词内部”
+print(re.findall(r"\Bcat\B", s))  # 左右都在“单词内部”
 
 s = "10kg 12g 8kg"
 re.findall(r"\d+(?=kg)", s)  # ['10', '8']

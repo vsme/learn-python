@@ -4,10 +4,10 @@ print(add(3, 5))  # 输出: 8
 
 # 作为回调 / key 函数
 nums = [3, -10, -2, 5]
-print(sorted(nums, key=lambda x: abs(x)))     # [-2, 3, 5, -10]
+print(sorted(nums, key=lambda x: abs(x)))  # [-2, 3, 5, -10]
 
 # map / filter 的轻量函数
-print(list(map(lambda x: x*x, [1,2,3])))      # [1, 4, 9]
+print(list(map(lambda x: x * x, [1, 2, 3])))  # [1, 4, 9]
 print(list(filter(lambda s: s.isalpha(), ["a", "3", "bc"])))  # ['a', 'bc']
 
 # 条件表达式
@@ -15,7 +15,7 @@ f = lambda x: "even" if x % 2 == 0 else "odd"
 print(f(3))  # 'odd'
 print(f(4))  # 'even'
 
-lam = lambda s: (n := len(s)) * (n > 3)   # 长度>3则返回长度，否则返回0
+lam = lambda s: (n := len(s)) * (n > 3)  # 长度>3则返回长度，否则返回0
 sizes = list(map(lam, ["a", "bb", "ccc", "dddd"]))
 print(sizes)
 

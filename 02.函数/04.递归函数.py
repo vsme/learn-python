@@ -6,7 +6,9 @@ def fact(n):
     # 拆解规则 / 递归展开（规模收敛：n -> n-1）
     return n * fact(n - 1)
 
+
 fact(5)
+
 
 # 二分查找
 def binary_search(arr, target, left, right):
@@ -24,6 +26,7 @@ def binary_search(arr, target, left, right):
         return binary_search(arr, target, left, mid - 1)
     # 如果中间值小于目标值，在右半部分查找
     return binary_search(arr, target, mid + 1, right)
+
 
 # 测试函数
 numbers = [1, 3, 5, 7, 9, 11, 13, 15]

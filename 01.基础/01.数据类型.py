@@ -1,13 +1,13 @@
 # 用单引号定义字符串
-nickname = '小明'
+nickname = "小明"
 # 用双引号定义字符串
 city = "北京"
 # 用三引号定义多行字符串
 poem = """春眠不觉晓，
 处处闻啼鸟。"""
 print(nickname)  # 输出：小明
-print(city)      # 输出：北京
-print(poem)      # 输出多行诗句
+print(city)  # 输出：北京
+print(poem)  # 输出多行诗句
 
 # 字符串拼接
 first_name = "张"
@@ -33,7 +33,7 @@ age = 20
 # %d 是一个占位符，表示将被整数替换
 # 括号中的(name, age)是要插入到字符串中的变量
 # 变量会按顺序替换占位符：name替换%s，age替换%d
-print("大家好，我叫%s，今年%d岁。" % (name, age)) # %s表示字符串，%d表示整数
+print("大家好，我叫%s，今年%d岁。" % (name, age))  # %s表示字符串，%d表示整数
 
 # 常见的格式化占位符：
 # %s - 字符串
@@ -45,7 +45,9 @@ print("大家好，我叫%s，今年%d岁。" % (name, age)) # %s表示字符串
 # 编码为UTF-8字节
 msg = "你好，世界"
 msg_bytes = msg.encode("utf-8")  # 编码为字节
-print(msg_bytes)  # 输出：b'\xe4\xbd\xa0\xe5\xa5\xbd\xef\xbc\x8c\xe4\xb8\x96\xe7\x95\x8c'
+print(
+    msg_bytes
+)  # 输出：b'\xe4\xbd\xa0\xe5\xa5\xbd\xef\xbc\x8c\xe4\xb8\x96\xe7\x95\x8c'
 
 # 解码回字符串
 msg_str = msg_bytes.decode("utf-8")  # 解码为字符串
@@ -83,16 +85,16 @@ print(fruits)  # 输出：['苹果', '西瓜', '香蕉', '橙子', '葡萄']
 
 # 删除最后一个水果
 last = fruits.pop()
-print(last)    # 输出被删除的水果：葡萄
+print(last)  # 输出被删除的水果：葡萄
 
 # 删除指定位置的水果，比如删除第2个（索引为1）
 removed = fruits.pop(1)
-print(removed) # 输出被删除的水果：西瓜
+print(removed)  # 输出被删除的水果：西瓜
 print(fruits)  # 输出：['苹果']
 
 # 判断变量是不是元组
 a = ()
-b = (1)
+b = 1
 c = [2]
 d = (3,)
 e = (4, 5, 6)

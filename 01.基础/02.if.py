@@ -25,7 +25,7 @@ height = 1.75  # 单位：米
 weight = 80.5  # 单位：千克
 
 # 计算BMI指数，公式：体重 / (身高的平方)
-bmi = weight / (height ** 2)
+bmi = weight / (height**2)
 print(f"小明的BMI指数为：{bmi:.2f}")  # 保留两位小数
 
 # 根据BMI指数判断健康状况
