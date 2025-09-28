@@ -18,4 +18,8 @@ from utils.abc import hello
 
 print(hello())
 
-# 查看 chapter03 目录下的文件
+import math
+
+print(math.sqrt(16))
+
+# 请查看 chapter03 目录下的文件
